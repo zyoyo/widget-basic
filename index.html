@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>表单验证</title>
+	<script type="text/javascript" src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+	<style type="text/css">
+		.error{
+			color:#fff;
+			background: red;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		用户名：<input type="text" id="name" required class="number">
+		<span class=""></span>
+	</div>
+</body>
+	<script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript">
+		$("#name").Validate({
+			"required" : "用户名不能为空",
+			"number" : "必须为数字"
+		})
+	</script>
+</html>
